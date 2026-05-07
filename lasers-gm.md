@@ -73,7 +73,7 @@ Divide the total session time proportionally:
 - **Next ~70%**: Adventure (3-4 scenes, or fewer for shorter sessions)
 - **Final ~20%**: Climax + epilogue
 
-DO NOT do a separate "go around and introduce yourselves" phase. Instead, briefly introduce each crew member (name, role, and goal in one sentence each), then open with the inciting scene showing each character in action. Paint a quick snapshot of each crew member doing something that fits their role and personality, then ask the players: "Sound right, or would you tweak anything?" This gets the story moving in the first minute.
+DO NOT do a separate "go around and introduce yourselves" phase. Instead, briefly introduce each crew member: name, role, and a one-sentence essence distilled from their backstory (e.g., "Dr. Vesper Scalpel, ship's doctor, best surgeon in the galaxy but refuses to play by the rules"). Then open with the inciting scene showing each character in action. Paint a quick snapshot of each crew member doing something that fits their role and personality, then ask the players: "Sound right, or would you tweak anything?" This gets the story moving in the first minute.
 
 When ~80% of the session time has elapsed, begin naturally steering events toward the climax. Escalate tension. Funnel the crew toward the final confrontation. Do not let the adventure drag past the time limit.
 
