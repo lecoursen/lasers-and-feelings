@@ -8,69 +8,28 @@ One person acts as the **session leader**: they type player actions into the ter
 
 - [GitHub Copilot CLI](https://docs.github.com/en/copilot/copilot-chat/using-github-copilot-chat-in-the-cli) installed and authenticated
 - Physical dice (d6s, at least 3 per player) or a dice-rolling app
-- The [Lasers & Feelings PDF](https://johnharper.itch.io/lasers-feelings) for character creation reference
 - 2-4 players + 1 session leader (the session leader can also be a player)
+
+## Setup (one time)
+
+Copy both agents from this repo to your Copilot agents folder:
+
+```bash
+cp lasers-prep.md lasers-gm.md ~/.copilot/agents/
+```
 
 ## Prep phase (before game day)
 
 Do this a day or more before the session. It takes about 10 minutes.
 
-### 1. Install the agent
+Start the `lasers-prep` agent in Copilot CLI. It walks you through everything:
 
-Copy `lasers-gm.md` from this repo to your Copilot agents folder:
+1. **Players**: How many, and what are their names?
+2. **Characters**: For each player, provide an existing character or have the agent generate one. Generated characters are built as a cohesive crew (complementary roles, varied LASERS/FEELINGS spread, interwoven backstories).
+3. **Ship**: Pick two strengths and one problem for the Raptor.
+4. **Scenario**: Choose a flavor (horror, political intrigue, etc.) or go fully random. The agent generates a complete adventure tailored to your crew and saves it without spoilers.
 
-```bash
-cp lasers-gm.md ~/.copilot/agents/lasers-gm.md
-```
-
-### 2. Install the skills
-
-The repo includes two Copilot CLI skills for session prep. Copy them to your personal skills directory:
-
-```bash
-cp -r .github/skills/lasers-generate-scenario ~/.copilot/skills/
-cp -r .github/skills/lasers-generate-character ~/.copilot/skills/
-```
-
-Restart Copilot CLI (or run `/skills reload` in an active session) to pick them up.
-
-### 3. Create the game folder
-
-```bash
-mkdir -p ~/Desktop/lasers-and-feelings
-```
-
-### 4. Generate a scenario
-
-Start a regular Copilot CLI session (not the agent) and say:
-
-```
-Generate a Lasers & Feelings scenario
-```
-
-Copilot will invoke the `lasers-generate-scenario` skill, which has all the game context, structure, and inspiration tables baked in. It saves the result to `~/Desktop/lasers-and-feelings/lasers-scenario.md` without showing you spoilers. If a characters file already exists, it weaves in backstory connections.
-
-You can add flavor:
-
-- "Generate a Lasers & Feelings scenario, but make it horror-themed"
-- "Generate a L&F scenario with political intrigue"
-- "Generate a scenario set on a planet, not in space"
-
-See `examples/lasers-scenario.md` for what a finished scenario looks like.
-
-### 5. Create characters
-
-Each player needs a character. You can create them by hand (see the [PDF](https://johnharper.itch.io/lasers-feelings) for options) or use the skill:
-
-```
-Create a Lasers & Feelings character for Alex
-```
-
-The `lasers-generate-character` skill will ask for preferences (or generate a fully random character), write a backstory, and add the character to `~/Desktop/lasers-and-feelings/lasers-characters.md`. It complements the existing group automatically (no duplicate roles, varied LASERS/FEELINGS spread).
-
-As a group, also pick ship strengths and a problem (the skill handles this when creating the first character).
-
-See `examples/lasers-characters.md` for the expected format.
+Everything is saved to `~/Desktop/lasers-and-feelings/`. See the `examples/` directory for what the output looks like.
 
 ## Game day
 
