@@ -76,11 +76,9 @@ Save everything to `~/Desktop/lasers-and-feelings/lasers-characters.md`. Include
 
 - Session leader opens a terminal and shares their screen so all players can see
 - Everyone has their dice ready
-- Allow 55 minutes for the session
-
 ### 2. Start the agent
 
-Start the `lasers-gm` agent in Copilot CLI. The agent will automatically read the scenario and characters files, note the start time, and begin the game immediately with an opening scene.
+Start the `lasers-gm` agent in Copilot CLI. The agent will ask how many minutes you have (default: 55), read the scenario and characters files, note the start time, and begin the game immediately with an opening scene. All pacing adjusts to the session length you choose.
 
 ### 3. Play
 
