@@ -31,17 +31,15 @@ mkdir -p ~/Desktop/lasers-and-feelings
 
 ### 3. Generate a scenario
 
-Start a regular Copilot CLI session (not the agent) and ask it to generate a scenario:
+Start a regular Copilot CLI session (not the agent) and tell it to read the prompt file from this repo:
 
 ```
-Generate a new Lasers & Feelings scenario and save it to
-~/Desktop/lasers-and-feelings/lasers-scenario.md.
-Don't show me any details, just confirm when done.
+Read ~/path/to/lasers-and-feelings/generate-scenario.md and follow its instructions.
 ```
 
-The scenario file is GM-eyes-only. Don't share it with the players.
+The prompt file contains the full game premise, scenario structure, and inspiration tables, so Copilot has everything it needs to generate a complete scenario. It saves the result to `~/Desktop/lasers-and-feelings/lasers-scenario.md` without showing you spoilers.
 
-You can add flavor parameters:
+You can add flavor parameters to the same message:
 
 - "Make it horror-themed"
 - "Something with political intrigue"
@@ -49,7 +47,7 @@ You can add flavor parameters:
 - "Include a moral dilemma, not just a villain to defeat"
 - "Heavily involve [character name]'s backstory"
 
-See `examples/lasers-scenario.md` for the expected format.
+See `examples/lasers-scenario.md` for what a finished scenario looks like.
 
 ### 4. Create characters
 
