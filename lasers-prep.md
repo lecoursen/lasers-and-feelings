@@ -128,7 +128,10 @@ WHICH WILL: Destroy a solar system / Reverse Time / Enslave a planet / Start a w
 
 ### Step 6: Done
 
-Tell the GM they're all set. Remind them: "On game day, start the `lasers-gm` agent and it will handle everything from there."
+Tell the GM they're all set. Remind them:
+
+- "Share `~/Desktop/lasers-and-feelings/lasers-characters.md` with your players so they can read their backstory before game day."
+- "On game day, start the `lasers-gm` agent and it will handle everything from there."
 
 ## Character guidelines
 
